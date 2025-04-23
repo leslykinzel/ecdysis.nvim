@@ -4,6 +4,8 @@ This plugin pipes the contents of your active buffer into [dis.py](https://docs.
 
 <img width="1000" alt="fizzbuzz" src="https://github.com/user-attachments/assets/b9270e9f-00af-445d-9425-4ece146ed73d" />
 
+You will need Python 3.5 at least. Behaviour will differ based on the exact version used.
+
 ## Lazy.nvim
 ```lua
 {
@@ -14,3 +16,13 @@ This plugin pipes the contents of your active buffer into [dis.py](https://docs.
   end,
 }
 ```
+
+## Usage
+
+Open a python file and run this:
+
+```
+:EcdysisDisassembleCurrentBuffer
+```
+
+If your python code contains egregious syntax errors, not only will the disassembly fail, but the stack trace will be printed in the background of the terminal window. This is only visible if you use a transparent background in Neovim.
