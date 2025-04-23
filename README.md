@@ -6,7 +6,8 @@ This plugin pipes the contents of your active buffer into [dis.py](https://docs.
 
 You will need Python 3.5 at least. Behaviour will differ based on the exact version used.
 
-## Lazy.nvim
+#### Lazy.nvim
+
 ```lua
 {
   "leslykinzel/ecdysis.nvim",
@@ -17,7 +18,18 @@ You will need Python 3.5 at least. Behaviour will differ based on the exact vers
 }
 ```
 
-## Usage
+#### Packer.nvim
+
+```lua
+use {
+  'leslykinzel/ecdysis.nvim',
+  config = function()
+    require('ecdysis').setup()
+  end
+}
+```
+
+### Usage
 
 Open a python file and run this:
 
